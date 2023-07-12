@@ -24,7 +24,7 @@ const Chatbot = () => {
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Bearer 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", // Thay YOUR_API_KEY bằng API Key của bạn
+            "Bearer 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", // Thay YOUR_API_KEY bằng API Key của bạn
         },
         body: JSON.stringify({
           prompt: input,
