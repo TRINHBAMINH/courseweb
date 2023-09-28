@@ -26,7 +26,7 @@ async function login(req, res) {
     const user = rows[0];
 
     // Kiểm tra mật khẩu
-    const passwordMatch = password === user?.password
+    const passwordMatch = (password === user?.password) 
     if (!passwordMatch) {
       return res
         .status(401)
@@ -42,7 +42,7 @@ async function login(req, res) {
       }
     );
 
-    res.status(200).json({ token, ok: true, uid: user.id });
+    return res.status(200).json({ token, ok: true, uid: user.id });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Đã có lỗi xảy ra.", ok: false });

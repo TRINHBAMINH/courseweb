@@ -14,7 +14,7 @@ const loginApi= async (data)=> {
         }
     })
     const result= await res.data
-    return result
+    return 
 }
 
 export default loginApi

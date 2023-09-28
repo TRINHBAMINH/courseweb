@@ -34,7 +34,7 @@ export default function Login() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Login"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">Login</DialogTitle>
         <DialogContent>
           <TextField
             value={email}

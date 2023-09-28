@@ -27,6 +27,7 @@ function Navbar({ sidebarExtended, setSidebarExtended }) {
   const { auth, user } = useContext(AppContext);
 
   const handleOnSubmit = (e) => {
+    console.log(1)
     e.preventDefault();
     pageRoute(`/search/${searchValue}`);
     e.target.value = " ";
@@ -85,6 +86,7 @@ function Navbar({ sidebarExtended, setSidebarExtended }) {
                   required
                 />
                 <button
+                
                   type="submit"
                   className="text-white absolute right-0 bottom-0 top-0 font-medium text-sm px-4 py-2 bg-[#f8f8f8] border-[1px] border-[#cccccc]"
                 >
